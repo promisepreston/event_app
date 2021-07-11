@@ -17,12 +17,26 @@ gem 'devise', '~> 4.8'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'database_cleaner', '~> 2.0'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker', '~> 2.18'
+  gem 'rspec-rails', '~> 5.0'
+  gem 'selenium-webdriver', '~> 3.142'
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'simplecov', '~> 0.21', require: false
+
 end
 
 group :development do
-  gem 'listen', '~> 3.3'
-  gem 'rack-mini-profiler', '~> 2.0'
-  gem 'web-console', '>= 4.1.0'
+  gem 'brakeman', '~> 5.0'
+  gem 'listen', '~> 3.5'
+  gem 'rack-mini-profiler', '~> 2.3'
+  gem 'rubocop', '~> 1.18'
+  gem 'rubocop-performance', '~> 1.11'
+  gem 'rubocop-rails', '~> 2.11'
+  gem 'rubocop-rspec', '~> 2.4'
+  gem 'solargraph', '~> 0.42'
+  gem 'web-console', '>= 4.1'
 end
 
 group :test do

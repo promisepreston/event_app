@@ -24,6 +24,10 @@ Next, run the command below to install all the gem dependencies:
 
 ## Database Setup
 
+Below is the Entity Relationship Diagram of the project at the logical level which is called logical schema. It shows how different entities of the database and their corresponding attributes which makes it easier for anyone to understand how the database is structured and how data is stored.
+
+![Event App ERD](https://user-images.githubusercontent.com/19772307/125204344-b4108f80-e274-11eb-90b0-06bb4a4bfb3a.png)
+
 To setup the database for the project, simply create a file called `.env`.
 
 And then pass in the following into it:

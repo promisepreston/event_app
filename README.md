@@ -66,4 +66,4 @@ To run the test suite, simply run the command:
 ## Project Deployment
 
 This project was deployed to Heroku, and you can view it using this URL:
-
+https://eventappng.herokuapp.com/

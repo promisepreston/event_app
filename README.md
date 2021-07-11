@@ -47,7 +47,7 @@ To setup `Webpack` with its dependencies and configurations, run the command bel
     rails webpacker:install
 
 
-# Project Testing
+## Project Testing
 
 To start the project after all the above setup and configuration has been completed, simply run the command:
 

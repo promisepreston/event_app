@@ -15,6 +15,9 @@ gem 'webpacker', '~> 5.0'
 # Authentication Gems
 gem 'devise', '~> 4.8'
 
+# Environment gems
+gem 'dotenv-rails', '~> 2.7'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'database_cleaner-active_record', '~> 2.0'

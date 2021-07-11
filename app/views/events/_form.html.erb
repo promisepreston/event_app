@@ -13,32 +13,42 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :code %>
-    <%= form.text_field :code %>
+    <%= form.text_field :code, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :address %>
-    <%= form.text_area :address %>
+    <%= form.text_area :address, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :event_type %>
-    <%= form.select :event_type, Event.event_types.keys.map { |event_type| [event_type.titleize, event_type] }, {prompt: 'Select Event Type'} %>
+    <%= form.select :event_type, Event.event_types.keys.map { |event_type| [event_type.titleize, event_type] }, {prompt: 'Select Event Type'}, required: true %>
   </div>
 
   <div class="field">
-    <%= form.label :event_status %>
-    <%= form.text_field :event_status %>
+    <%= form.label :event_time %>
+    <%= form.time_field :event_time, required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_field :start_date, required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.date_field :end_date, required: true %>
   </div>
 
   <div class="field">

@@ -26,8 +26,18 @@
 </p>
 
 <p>
-  <strong>Event status:</strong>
-  <%= @event.event_status %>
+  <strong>Event time:</strong>
+  <%= @event.event_time %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @event.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @event.end_date %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

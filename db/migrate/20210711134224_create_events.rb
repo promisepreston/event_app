@@ -8,7 +8,9 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.text :address
       t.text :description
       t.string :event_type
-      t.string :event_status
+      t.time :event_time
+      t.date :start_date
+      t.date :end_date
       t.references :user, null: false, foreign_key: true
 
       t.timestamps

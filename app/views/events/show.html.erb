@@ -22,17 +22,12 @@
 
 <p>
   <strong>Event type:</strong>
-  <%= @event.event_type %>
+  <%= @event.event_type.titleize %>
 </p>
 
 <p>
   <strong>Event status:</strong>
   <%= @event.event_status %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @event.user_id %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

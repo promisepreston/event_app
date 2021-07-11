@@ -24,7 +24,7 @@ Next, run the command below to install all the gem dependencies:
 
 ## Database Setup
 
-Below is the Entity Relationship Diagram of the project at the logical level which is called logical schema. It shows how different entities of the database and their corresponding attributes which makes it easier for anyone to understand how the database is structured and how data is stored.
+Below is the Entity Relationship Diagram of the project at the logical level which is called **logical schema**. It shows the different entities of the database and their corresponding attributes which makes it easier for anyone to understand how the database is structured and how data is stored.
 
 ![Event App ERD](https://user-images.githubusercontent.com/19772307/125204636-1c13a580-e276-11eb-8e11-ba737fbf5a02.png)
 

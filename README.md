@@ -12,26 +12,58 @@ This application requires the following to run:
 * Ubuntu 18.04 or higher
 * PostgreSQL 9.5 or higher
 
+
+## Project Setup
+
+To setup the project on your environment, simply clone the project.
+
+Next, run the command below to install all the gem dependencies:
+
+    bundle install
+
+
+## Database Setup
+
+To setup the database for the project, simply create a file called `.env`.
+
+And then pass in the following into it:
+
+    DATABASE_NAME=event_app_development
+    DATABASE_NAME_TEST=event_app_test
+    DATABASE_USER=your-username
+    DATABASE_PASSWORD=your-password
+    DATABASE_HOST=127.0.0.1
+    DATABASE_PORT=5432
+
+Next, run the following commands to create and migrate the database:
+
+    rails db:create
+    rails db:migrate
+
+
+## Webpack Setup
 To setup `Webpack` with its dependencies and configurations, run the command below:
 
     rails webpacker:install
 
 
-Things you may want to cover:
+# Project Testing
 
-* System dependencies
+To start the project after all the above setup and configuration has been completed, simply run the command:
 
-* Configuration
+    rails server
 
-* Database creation
 
-* Database initialization
+## Test Suite
 
-* How to run the test suite
+The project was setup with [rspec](https://github.com/rspec/rspec-rails) test suite.
 
-* Services (job queues, cache servers, search engines, etc.)
+To run the test suite, simply run the command:
 
-* Deployment instructions
+    rspec
 
-* ...
+
+## Project Deployment
+
+This project was deployed to Heroku, and you can view it using this URL:
 
